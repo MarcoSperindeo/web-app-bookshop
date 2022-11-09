@@ -3,7 +3,7 @@
 This bookshop web applications enables users to either acquire from or sell to books one another. 
 
 ## How?
-- Server-side scripting for generating dynamic content fir the web pages has been implemented in PHP
+- Server-side scripting for generating dynamic content for the web pages has been implemented in PHP
 - client-side scripting for formm validation has been implemented in JavScript
 - Styling of HTML pages has been implemented using CSS
 - MariaDB relational DBMS
