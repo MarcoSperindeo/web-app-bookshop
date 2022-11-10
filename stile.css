@@ -1,0 +1,286 @@
+
+/* parte comune */
+body{
+    background: url(img/background-img.png); 
+	background-color: #A9A9A9; 
+	background-position: center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: Helvetica, Arial, Sans-Serif; 
+	font-size: 100%; 
+	font-weight: bold;
+	color: black;
+    max-width: 1200px;
+    margin: 0 auto; /*centra la pagina*/
+}
+
+p { text-align: center; font-style: "Helvetica"; font-weight: bold}
+
+#prod-insert-title {font-size: 25px; text-align: left; margin-left:2.4em}
+#prod-insert-nome, #prod-insert-prezzo, #prod-insert-quantita, #prod-insert-submit, #submit-aggiorna{ text-align:left; margin-left:1.5em; }
+	
+a:link { color: #c81912; text-decoration: none}
+a:visited { color: #761a1a; text-decoration: none}
+a:hover { color: #761a1a; text-decoration: underline;}
+
+#titolo {
+	font-family: Edwardian Script ITC, Helvetica, Arial, SanSerif;  
+	font-size: 60px;
+	font-weight: bold;
+	width: 80%;
+	color: #c81912;
+	padding: 6px 6px 6px 6px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left:90px;
+	margin-right:8em;
+}
+
+   
+#user {   /* deve essere posizionato in alto a destra */
+	position: absolute;
+	top:2px;
+	right: 2px;
+}
+
+#contenuto {
+    padding:1%;
+    margin-left: none;
+	margin-bottom: 1em;
+	font-size: 18px;
+    min-width: 1em;
+    padding-bottom:5em;
+	padding-top: 0.5em;
+	text-align: center;
+    float:none;  
+}
+
+#form-login{
+	font-size: 25px;
+	min-width: 2em;
+	padding:1%;
+	padding-bottom:4em;
+	padding-left: 10em;
+	text-align: left;
+	float:left; 
+}
+  
+#ok-login{
+	width: 10%;
+}
+ 
+#reset-login{
+	width: 10%;
+}
+  
+#navigation{
+	font-size:22px;
+	margin-left: 0.5em;
+    padding: 2%;
+    width: 10em; /*Relative to the font-size of the element (2em means 2 times the size of the current font) */
+    text-align: left;
+   /* float:left;*/
+}
+
+#navigation li:hover{
+  background-color: #f2f2f2;
+}
+
+#footer { 
+    width: 99%; /*non 100% per evitare che la renderizzazione di immagini possa uscire dai limiti*/
+    height:8em;
+    border-top: 0.3em solid #B22222;
+    padding-top: 2em;   /*per evitare bordo e contenuto del footer si sovrappongano*/
+    margin-bottom:4em;     /* per lasciare un po' di spazio dal bordo della finestra */
+    min-width: 5em;
+
+    float:none;
+    clear:both;
+}
+
+#noscript{
+	width: 70%;
+	margin: 30px auto;
+	color:red;
+	text-align:center;
+	margin-bottom: 50px ;
+}
+
+#input-acquista{
+	margin-top:15px;
+	text-align:left;
+	margin-bottom:7em;
+}
+
+table{
+    border-collapse: collapse;
+	margin-left:20px;
+    width: 60%;
+	color: black;
+}
+
+table.utente td{
+  border: 2px solid black;
+  padding: 5px;
+}
+
+table tr:hover {background-color: #ddd;} /* grigio */
+
+table th {
+	padding: 8px;
+	border: 1px solid black;
+	padding: 5px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+table td{
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+td.prezzo {
+  text-align: right;
+}
+
+caption {
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom:1em;
+	padding-right: 2em;
+}
+
+input[type=submit], input[type=reset] {
+    width: 25%;
+    background-color: white;
+    color: black;
+	font-weight: bold;
+    padding: 10px 10px;
+    margin: 5px 5px;
+	margin-left: 6px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover,  input[type=reset]:hover {
+    background-color: #ddd;
+}
+
+
+.errori {
+	border: 1px solid red;
+	max-width: 600px;
+	margin: 10px auto;
+	clear: both;
+}
+
+.erroreacquisto {
+	margin: 100px 0;
+    padding: 5px;
+    text-align: center;
+    line-height: 200%;
+}
+
+a.button {
+  text-decoration: none;
+  color: red;
+}
+
+
+/* per schermo */
+@media screen and (max-width: 800px) {
+
+	body{ 
+		background-color: white;
+		font-family: Helvetica, Arial, Sans-Serif; 
+		font-size: 12pt;
+		color: black;
+		margin-left:1em;
+	}
+	  
+	#titolo {  
+		font-size: 32px;
+		text-align: left;
+		padding: 5px 5px 5px 5px;
+		margin: 40px 20px 20px 5px; 
+	}
+
+	#navigation{
+		margin: 10px 130px 40px 30px;
+		font-size: 36px;
+		width : 100%;
+		text-align: left;
+		color: black;
+		float: left;
+	}
+
+	#navigation li {
+		float: none;
+		padding: 0;
+		list-style: square;
+		border: none;
+		background-color: transparent;
+	}
+
+	#navigation li a:hover{
+		background-color: transparent;
+		text-decoration: underline;
+	}
+
+	#navigation li:hover{
+		background-color: transparent;
+	} 
+	
+}
+
+
+/* per stampa */
+@media print {
+	
+	body { 
+		color : black;
+		background : white;
+		font-family : "Times New Roman", Times, serif;
+		font-size : 12pt;
+		line-height: 1.2;
+	}
+
+	a {text-decoration: underline; color: blue;}
+
+	a[href]:after{content: " (" attr(href) ")"}
+
+	label {margin-right:1em; float: left; width: 9em;}
+
+	h3 {font-style: italic;}
+
+	#navigation {display: none;}
+
+	#user {display:none;}
+
+	#lastp{clear:both; padding-top:20em;}
+
+	#footer { 
+		font-family: "Times New Roman", Georgia, Serif; 
+		font-style: italic; 
+		font-size: 8pt;
+		width: 99%;
+		margin-top: 6em;
+		border-top-style: solid;
+		border-top-width: thin;
+		border-top-color: black;      
+		margin-bottom:2em;
+		padding-top: 0.3em;
+		clear:both;
+		float:none;      
+	}
+
+	table{border-style:solid; border-color:gray; border-width:0.1em; margin:1em; padding:0.1em; }
+
+	th,td{text-align: center;} 
+
+	img {display: none;} 
+	
+}
