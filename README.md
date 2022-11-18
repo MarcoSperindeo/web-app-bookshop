@@ -4,7 +4,7 @@ This bookshop web applications enables users to either acquire from or sell to b
 
 ## How?
 - Server-side scripting for generating dynamic content for the web pages has been implemented in PHP
-- client-side scripting for formm validation has been implemented in JavScript
+- Client-side scripting for form validation has been implemented in JavScript
 - Styling of HTML pages has been implemented using CSS
 - MariaDB relational DBMS
 - Website is hosted on Apache HTTP web server
