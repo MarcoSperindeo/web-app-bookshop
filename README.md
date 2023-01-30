@@ -1,6 +1,6 @@
 # web-app-bookshop
 ## What?
-This bookshop web applications enables users to either acquire from or sell to books one another. 
+This bookshop web applications enables users to either acquire or sell books. 
 
 ## How?
 - Server-side scripting for generating dynamic content for the web pages has been implemented in PHP
